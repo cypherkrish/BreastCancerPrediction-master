@@ -1,6 +1,14 @@
-# Breast Cancer Prediction using Flask
+# Predict Type of the Breast Cancer using Flask
 
-In this section, we have used a simple RandomForestClassifier to diagnose the breast cancer.
+In this section, we have used a simple LoggisticRegression to diagnose the breast cancer.
+
+Create model (pkl) file and call the pkl file to predict the cancer
+
+
+```
+def BrestCancerPredection(input_data):
+```
+
 
 Creating the flask API
 
@@ -8,19 +16,16 @@ Creating the flask API
 app = Flask("__name__")
 ```
 
-The loadPage method calls our home.html.
+
+Collect the data from the html and return the result.
 ```
-@app.route("/")
-def loadPage():
-	return render_template('home.html', query="")
+@app.route('/', methods=['GET', 'POST'])
+def index():
+        return render_template('result.html', result=result)
+    return render_template('index.html')
+
 ```
 
-The cancerPrediction method is our POST method, which is basically called when we pass all the inputs from our front end and click SUBMIT.
-```
-@app.route("/", methods=['POST'])
-def cancerPrediction():
-```
-  
 The run() method of Flask class runs the application on the local development server.
 ```
 app.run()
