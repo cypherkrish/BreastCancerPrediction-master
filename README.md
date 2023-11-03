@@ -40,12 +40,3 @@ Below message in Python shell is seen, which indicates that our App is now hoste
 ```
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
-
-
-HERE'S HOW OUR FRONTEND LOOKS LIKE:
-
-FOR DIAGNOSED, WE ARE ALSO SHOWING THE PROBABILITY/CONFIDENCE SCORE:
-![Diagnosed](https://github.com/beingdatum/BreastCancerPrediction/blob/master/Images/diag.PNG)
-
-FOR NON DIAGNOSED, WE SIMPLY RETURN THAT "THE PATIENT IS NOT DIAGNOSED BY BREAST CANCER"
-![Not Diagnosed](https://github.com/beingdatum/BreastCancerPrediction/blob/master/Images/notdiag.PNG)
